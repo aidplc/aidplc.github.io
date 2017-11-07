@@ -1,0 +1,129 @@
+﻿
+/* Added by Hasim Choudhary for blank master page */
+
+#suiteBarLeft {
+display:none !important;
+}
+
+#suiteBarRight {
+display:none !important;
+}
+
+#s4-titlerow {
+    display:none !important;
+}
+
+#sideNavBox {
+    display:none !important;
+}
+
+#contentBox {
+margin-left:10px;
+margin-right:10px;
+min-width:0px;
+}
+
+#s4-ribbonrow {
+    display:none !important;
+}
+
+#contentRow
+{
+padding-top:0px;
+}
+
+#s4-workspace
+{
+height:100% !important;
+width:100% !important;
+}
+
+/* End by Hasim Choudhary for blank master page */
+
+/***** Web chat starts here *****/
+.mainheader .rightpan{position: relative;}
+.enableChatSession{height: 300px !important; z-index:1; position: absolute; width: 100%; }
+.mainheader .live-chat-session .chat-send-wrapper{margin-top: 10px;}
+.mainheader .live-chat-session .chat-send-wrapper .chat-send{bottom: 0; float: left; margin-right: 10px; width: 150px;}
+.mainheader .live-chat-session .chat-session-wrapper{height: 205px;overflow: auto;}
+.mainheader .live-chat-session .chat-session-wrapper .chat-session-user-wrapper{text-align: right;}
+.mainheader .live-chat-session .chat-session-wrapper .chat-session-support-wrapper{text-align: left;}
+.mainheader .live-chat-session .chat-session-wrapper .chat-text-wrapper{margin: 10px 0; border-bottom: 1px dotted black;}
+.i-chatActive{background-position: -74px -9px;height: 22px; width: 34px;}
+.i-chatInactive{ background-position: -524px -9px; height: 22px; width: 34px;}
+
+
+
+.chatHeader{background:#002f69; height:45px;overflow:hidden;}
+.chatLogo{padding:12px 10px 12px 10px; display:block; font-size:14px;color:#ffffff; float:left;}
+.contacts{display:block;}
+.chatBtns{float:right; margin:8px 0;}
+.chatBtns a{display:block; float:left; background:url(../img/chat-btn-sprite.png) no-repeat 0 0; height:26px; width:26px; margin:0 5px 0 0;}
+.chatBtns a.chatClose{background-position:-31px 0;}
+.chatBtns a.chatLogOut{background-position:-31px 0;}
+.chatBtns a.down{background-position:-61px 0;}
+.chatContent{ padding: 15px 10px 15px 10px; background:#ffffff;}
+.chatContent input[type="text"]{border-radius:3px; margin-bottom:10px; height:35px; line-height:1; }
+.chatContent textarea{resize:none; margin-bottom:20px; line-height:16px; height:50px; border-radius:3px;overflow: hidden;overflow-y: auto;}
+.chatContent .button {float:right; display:block; padding:10px 25px; text-transform:uppercase; font-size:11px; border-radius:3px; }
+.chatContent.conversation ul {float: left; padding: 0; width: 102%;}
+.conversation ul li { border-bottom: 1px solid #ececec; float: left; list-style: none outside none; margin-bottom: 10px; width: 100%;}
+.conversation li.you p, .conversation li.you span{float:right; width:100%; text-align:right;}
+.conversation li span{color:#00a7e8;}
+.conversation li.you p{color:#6f6f6f;}
+.message{color:#00a7e8; font-family:Georgia,serif; font-size:12px; font-style:italic;}
+
+
+/*------------------------ contact-list-------------------*/
+.contactContent{background:#ffffff; overflow:hidden;}
+.contactContent.contact-list ul {float: left; padding: 0; width: 102%;}
+.contact-list ul li{border-bottom: 1px solid #ececec;float:left;list-style:none outside none;margin-bottom:10px;padding:10px 10px 10px 0;width:100%;}
+.contact-logo{padding: 12px 10px; display:block; font-size:14px;color:#ffffff; float:left;}
+.contact-list li span{color:#00a7e8;padding-left: 10px;}
+.contact-list .active{background: url("../img/communityCarosuelActive.html") no-repeat scroll 185px 14px rgba(0, 0, 0, 0);}
+.contact-list .inactive{background: url("../img/communityCarosuelUnactive.html") no-repeat scroll 185px 14px rgba(0, 0, 0, 0);}
+.contact-list .borderbottom {background: none repeat scroll 0 0 #00A7E8;border-bottom: 1px solid #ECECEC;color: #FFFFFF;padding: 10px 7px;width: 100%;}
+.contact-list li .contactSerachImg{background: url("../img/chosen-sprite.html") repeat scroll 30px -22px rgba(0, 0, 0, 0); float: left;height: 19px;
+    margin: 6px 0 0;
+    width: 30px;
+}
+.contentScroll li span{display:block;}
+.contentScroll li span.emailId{color:#333333;}
+.contactList{padding:0px 10px;}
+.contact-list li input.textname {float: left; margin-left: 2px; margin-right: 6px;width: 150px;height: 29px;padding: 5px;}
+.contact-list li .contactsetting{background:url(../img/sprite-old.html) repeat scroll 30px -22px rgba(0, 0, 0, 0);float: left;height: 50px;margin: 6px 0 0;width: 50px;}
+.contact-list .button {float:right; display:block;padding: 7px 10px; text-transform:uppercase; font-size:11px; border-radius:3px; }
+button, .button {color:#fff!important; margin-left:0!important;}
+
+/*-------  chat fix after integration ---------------*/
+
+object{
+	display:none;
+}
+div#contentBox {
+ margin: 0px;
+}
+#s4-bodyContainer{padding-bottom:0;}
+#suiteBar{height:0;}
+
+#ctl00_PlaceHolderMain_lblChatMessages
+{
+	overflow-y:auto;
+	overflow-x:hidden;
+	height:205px;
+	word-wrap:break-word;
+	margin-bottom:10px;
+}
+
+.error_message
+{
+	color:red;padding-bottom:5px;padding-left:10px;display:none;
+}
+
+.ms-signInLink
+{
+    display:none !important;
+}
+
+/***** Web chat end here *****/
+
