@@ -1,9 +1,0 @@
-// JavaScript Document
-/* 
- * jQuery - Lite Content Slider - Plugin v1.0
- * http://www.aakashweb.com/
- * Copyright 2010, Aakash Chakravarthy
- * Released under the MIT License.
- */
- 
-!function(t){t.fn.liteSlider=function(n){function e(t){t.wrap('<div class="sliderContentsWrap" />')}function a(e){t(".sliderContentsWrap").css({padding:0,margin:0,width:n.width,height:n.height,overflow:"hidden",position:"relative"}),e.css({padding:0,margin:0,width:n.width*u,height:n.height,position:"absolute"}),e.children(n.content).css({"float":"left",width:n.width,height:n.height})}function s(){i=0,t("."+n.buttonsClass).each(function(){i++,t(this).addClass("bt"+i),t(this).attr("rel",i)})}function l(e){var i=-n.width*(parseInt(e)-1);t(".sliderContentsWrap "+C).animate({left:i}),t("."+n.buttonsClass).each(function(){t(this).removeClass(n.activeClass),t(this).hasClass("bt"+e)&&t(this).addClass(n.activeClass)}),w=e}function o(){l(u>w?parseInt(w)+1:1)}function c(){clearInterval(f),f=setInterval(function(){o()},y),t(n.controlBt).text(n.pauseText),p=!0}function h(){clearInterval(f),t(n.controlBt).text(n.playText),p=!1}function r(t){e(t),a(t),s(),1==n.autoplay?c():h()}var u,d={content:".content",width:500,height:250,autoplay:!1,delay:3,buttonsClass:"",activeClass:"",controlBt:"",playText:" Play",pauseText:"Pause"},n=t.extend(d,n),f=0,p=n.autoplay,v=t(this).attr("class").split(" "),C="."+v[0],g=0,w=1,y=1e3*parseInt(n.delay);return t(this).children(n.content).each(function(){u=++g}),this.each(function(){r(t(this)),t("."+n.buttonsClass).click(function(n){n.preventDefault(),h(),l(t(this).attr("rel"))}),t(n.controlBt).click(function(t){t.preventDefault(),1==p?h():c()})})}}(jQuery);
